@@ -1,0 +1,81 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#header {
+  position: sticky;
+  top: 0;
+  animation: ease-in 1s;
+}
+header {
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+}
+#app-header {
+  display: block;
+}
+
+#app-brand a {
+  text-align: center;
+  text-decoration: none;
+  color: chocolate;
+}
+
+#mobile-nav {
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+}
+
+#topnav > #nav-menu {
+  display: none;
+}
+
+.menu-toggle {
+  display: contents !important;
+}
+
+#topnav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#topnav > ul > li {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+#topnav a {
+  text-decoration: none;
+  color: chocolate;
+}
+
+#view-search {
+  display: none;
+}
+
+@media (min-width: 567px) {
+  #app-header {
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #topnav > #nav-menu {
+    display: contents;
+  }
+  #topnav > button {
+    display: none;
+  }
+  #topnav > ul > li {
+    display: inline;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #view-search {
+    display: contents;
+  }
+}
